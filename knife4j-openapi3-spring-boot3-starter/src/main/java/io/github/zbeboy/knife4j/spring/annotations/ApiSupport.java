@@ -44,7 +44,7 @@ public @interface ApiSupport {
     String author() default "";
     
     /**
-     * 作者,提供数组形式以展示多个，会和{@link #author()}进行合并展示 <p />
+     * 作者,提供数组形式以展示多个
      * issues: <a href="https://gitee.com/xiaoym/knife4j/issues/I6SZMK">Gitee#I6SZMK</a>
      * @since v4.2.0
      * @return 作者
