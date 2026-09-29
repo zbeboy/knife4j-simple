@@ -61,6 +61,7 @@ public class BasicFilter {
     
     /**
      * 添加外部过滤规则，正则表达式
+     * @param rules 规则
      */
     public void addRule(Collection<String> rules) {
         if (rules != null && !rules.isEmpty()) {

@@ -30,8 +30,8 @@ public class FilterUtils {
     /**
      * 响应Basic信息
      *
-     * @param httpServletResponse
-     * @throws IOException
+     * @param httpServletResponse 响应
+     * @throws IOException 异常
      */
     public static void writeForbiddenCode(HttpServletResponse httpServletResponse) throws IOException {
         httpServletResponse.setStatus(401);

@@ -50,14 +50,14 @@ public abstract class AbstractSecurityFilter extends BasicFilter {
     
     /**
      * // SpringMVC环境中,由此init方法初始化此Filter,SpringBoot环境中则不同
-     * @param enumeration
-     * @param initBasicEnable
-     * @param initUserName
-     * @param initPassword
+     * @param enumeration 参数
+     * @param initBasicEnable 参数
+     * @param initUserName 参数
+     * @param initPassword 参数
      */
     protected void initServletConfig(Enumeration<String> enumeration, String initBasicEnable, String initUserName, String initPassword) {
         if (enumeration != null && enumeration.hasMoreElements()) {
-            setEnableBasicAuth(Boolean.valueOf(initBasicEnable));
+            setEnableBasicAuth(Boolean.parseBoolean(initBasicEnable));
             setUserName(initUserName);
             setPassword(initPassword);
         }
@@ -68,7 +68,7 @@ public abstract class AbstractSecurityFilter extends BasicFilter {
      * @param url 当前系统访问URL
      * @param sessionAuth Basic验证服务器SessionObject
      * @param auth 请求头value
-     * @return
+     * @return 是否验证
      */
     protected boolean tryCommonBasic(String url, Object sessionAuth, String auth) {
         if (this.isEnableBasicAuth()) {

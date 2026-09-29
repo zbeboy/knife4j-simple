@@ -58,6 +58,9 @@ public class Knife4jAutoConfiguration {
     
     /**
      * 增强自定义配置
+     * @param knife4jProperties 配置
+     * @param docProperties doc配置
+     * @return 自定义
      */
     @Bean
     @ConditionalOnMissingBean
@@ -75,6 +78,7 @@ public class Knife4jAutoConfiguration {
     /**
      * 配置Cors
      * @since 2.0.4
+     * @return 过滤器
      */
     @Bean("knife4jCorsFilter")
     @ConditionalOnMissingBean(CorsFilter.class)

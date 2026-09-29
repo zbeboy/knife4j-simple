@@ -76,6 +76,8 @@ public class CommonUtils {
     
     /**
      * 首字母大写
+     * @param name 参数
+     * @return 转换后数据
      */
     public static String genSupperName(String name) {
         String supperName = "";
