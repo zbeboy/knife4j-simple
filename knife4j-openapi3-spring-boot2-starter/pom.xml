@@ -10,11 +10,12 @@
         <version>1.0-RELEASE</version>
     </parent>
 
+    <groupId>io.github.zbeboy</groupId>
     <artifactId>knife4j-openapi3-spring-boot2-starter</artifactId>
     <version>1.0-RELEASE</version>
-    <name>io.github.zbeboy:knife4j-simple</name>
-    <description>knife4j-simple</description>
-    <url>https://github.com/zbeboy/knife4j-simple</url>
+    <name>io.github.zbeboy:knife4j-openapi3-spring-boot2-starter</name>
+    <description>knife4j-openapi3-spring-boot2-starter</description>
+    <url>https://github.com/zbeboy/knife4j-simple/tree/master/knife4j-openapi3-spring-boot2-starter</url>
 
     <licenses>
         <license>
@@ -35,7 +36,6 @@
         <developerConnection>scm:git:git@github.com:zbeboy/knife4j-simple.git</developerConnection>
         <url>git@github.com:zbeboy/knife4j-simple.git</url>
     </scm>
-
     <properties>
         <knife4j.version>4.5.0</knife4j.version>
         <springboot.version>2.7.18</springboot.version>
@@ -85,81 +85,4 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                    <encoding>utf-8</encoding>
-                    <compilerArguments>
-                        <extdirs>${project.basedir}/lib</extdirs>
-                    </compilerArguments>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>3.2.7</version>
-                <configuration>
-                    <gpgArguments>
-                        <arg>--pinentry-mode</arg>
-                        <arg>loopback</arg>
-                    </gpgArguments>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.sonatype.central</groupId>
-                <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>0.7.0</version> <!-- 建议检查最新版本 -->
-                <extensions>true</extensions>
-                <configuration>
-                    <publishingServerId>zbeboy-center</publishingServerId>
-                    <autoPublish>false</autoPublish> <!-- 手动发布 -->
-                    <waitUntil>uploaded</waitUntil> <!-- 等待上传完成 -->
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>2.2.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>
