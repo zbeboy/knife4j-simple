@@ -40,6 +40,7 @@
 
     <modules>
         <module>knife4j-openapi3-spring-boot2-starter</module>
+        <module>knife4j-openapi3-spring-boot2-webflux-starter</module>
         <module>knife4j-openapi3-spring-boot3-starter</module>
         <module>knife4j-openapi3-spring-boot4-starter</module>
         <module>knife4j-openapi3-spring-boot2-demo</module>

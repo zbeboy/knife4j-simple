@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.github.zbeboy</groupId>
+        <artifactId>knife4j-simple</artifactId>
+        <version>1.0-RELEASE</version>
+    </parent>
+
+    <groupId>io.github.zbeboy</groupId>
+    <artifactId>knife4j-openapi3-spring-boot2-webflux-starter</artifactId>
+    <version>1.0-RELEASE</version>
+    <name>io.github.zbeboy:knife4j-openapi3-spring-boot2-webflux-starter</name>
+    <description>knife4j-openapi3-spring-boot2-webflux-starter</description>
+    <url>https://github.com/zbeboy/knife4j-simple/tree/master/knife4j-openapi3-spring-boot2-webflux-starter</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>zbeboy</name>
+            <email>zbeboy@qq.com</email>
+            <organization>zbeboysoftware</organization>
+            <organizationUrl>zbeboysoftware.com</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git@github.com:zbeboy/knife4j-simple.git</connection>
+        <developerConnection>scm:git:git@github.com:zbeboy/knife4j-simple.git</developerConnection>
+        <url>git@github.com:zbeboy/knife4j-simple.git</url>
+    </scm>
+
+    <properties>
+        <knife4j.version>4.5.0</knife4j.version>
+        <springboot.version>2.7.18</springboot.version>
+        <spring-web.version>5.3.31</spring-web.version>
+        <springdoc.version>1.8.0</springdoc.version>
+        <reactor.version>3.4.34</reactor.version>
+        <servlet.version>4.0.1</servlet.version>
+        <slf4j.version>2.0.18</slf4j.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${springboot.version}</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-ui</artifactId>
+            <version>${knife4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>${springdoc.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-webflux-ui</artifactId>
+            <version>${springdoc.version}</version>
+        </dependency>
+
+        <!-- reactor-core -->
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>${reactor.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring-web.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+</project>
