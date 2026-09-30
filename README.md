@@ -61,6 +61,8 @@ _[knife4j-openapi3-spring-boot2-starter](knife4j-openapi3-spring-boot2-starter)_
 _[knife4j-openapi3-spring-boot3-starter](knife4j-openapi3-spring-boot3-starter)_ 适配Spring boot 3  
 _[knife4j-openapi3-spring-boot4-starter](knife4j-openapi3-spring-boot4-starter)_ 适配Spring boot 4  
 _[knife4j-openapi3-spring-boot2-webflux-starter](knife4j-openapi3-spring-boot2-webflux-starter)_ 适配Spring boot 2 webflux  
+_[knife4j-openapi3-spring-boot3-webflux-starter](knife4j-openapi3-spring-boot3-webflux-starter)_ 适配Spring boot 3 webflux
+_[knife4j-openapi3-spring-boot4-webflux-starter](knife4j-openapi3-spring-boot4-webflux-starter)_ 适配Spring boot 4 webflux
 
 ## 依赖版本
 ### maven坐标（以knife4j-openapi3-spring-boot2-starter为例）
@@ -69,7 +71,7 @@ _[knife4j-openapi3-spring-boot2-webflux-starter](knife4j-openapi3-spring-boot2-w
         <artifactId>knife4j-openapi3-spring-boot2-starter</artifactId>
         <version>${version}</version>
     </dependency>`
-
+注意：不需要引入[Spring doc](https://springdoc.org/)，starter中已引入，版本过高或过低可能造成冲突。
 ### knife4j-openapi3-spring-boot2-starter
 | 版本          | Spring doc | Spring boot |JDK|
 |-------------|------------|-------------|-------------|
@@ -92,6 +94,18 @@ _[knife4j-openapi3-spring-boot2-webflux-starter](knife4j-openapi3-spring-boot2-w
 |-------------|------------|-------------|-----|
 | 1.1-RELEASE | 1.8.0      | 2.7.18         | 8   |
 
+### knife4j-openapi3-spring-boot3-webflux-starter
+| 版本          | Spring doc | Spring boot | JDK |
+|-------------|------------|-------------|-----|
+| 1.1-RELEASE | 2.9.1      | 3.5.16         | 17  |
+
+### knife4j-openapi3-spring-boot4-webflux-starter
+| 版本          | Spring doc | Spring boot | JDK |
+|-------------|------------|-------------|-----|
+| 1.1-RELEASE | 3.1.1      | 4.1.1         | 17  |
+
 # 发布说明
+## 1.1-RELEASE
+1. 修复1.0中基础base鉴权失效问题
 ## 1.0-RELEASE
 1. 基础功能适合发布
