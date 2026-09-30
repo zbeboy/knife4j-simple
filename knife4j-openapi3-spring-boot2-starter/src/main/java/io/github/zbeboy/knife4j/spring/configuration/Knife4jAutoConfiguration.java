@@ -104,7 +104,7 @@ public class Knife4jAutoConfiguration {
      */
     @Bean
     @ConditionalOnMissingBean(SecurityBasicAuthFilter.class)
-    @ConditionalOnExpression("${knife4j.production:false} && ${knife4j.basic.enable:true}")
+    @ConditionalOnExpression("${knife4j.production}==false && ${knife4j.basic.enable}==true")
     public FilterRegistrationBean<SecurityBasicAuthFilter> securityBasicAuthFilter(Knife4jProperties knife4jProperties) {
         SecurityBasicAuthFilter authFilter = new SecurityBasicAuthFilter();
         if (knife4jProperties == null) {
@@ -136,7 +136,7 @@ public class Knife4jAutoConfiguration {
     @ConditionalOnProperty(name = "knife4j.production", havingValue = "true")
     public FilterRegistrationBean<ProductionSecurityFilter> productionSecurityFilter(Knife4jProperties knife4jProperties) {
         boolean prod = false;
-        ProductionSecurityFilter p = null;
+        ProductionSecurityFilter p;
         if (knife4jProperties == null) {
             if (environment != null) {
                 String prodStr = environment.getProperty("knife4j.production");

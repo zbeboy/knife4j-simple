@@ -1,0 +1,10 @@
+springdoc:
+  packagesToScan: io.github.zbeboy.knife4j.demo.controller
+
+knife4j:
+  enable: true
+  basic:
+    enable: true
+    username: admin
+    password: admin123
+  production: false
