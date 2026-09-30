@@ -50,6 +50,7 @@
         <module>knife4j-openapi3-spring-boot3-demo</module>
         <module>knife4j-openapi3-spring-boot3-webflux-demo</module>
         <module>knife4j-openapi3-spring-boot4-demo</module>
+        <module>knife4j-openapi3-spring-boot4-webflux-demo</module>
     </modules>
 
     <build>
