@@ -28,8 +28,8 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI springShopOpenAPI() {
         return new OpenAPI()
-                .info(new Info().title("Spring boot3")
-                        .description("Spring boot3 API")
+                .info(new Info().title("Spring boot4")
+                        .description("Spring boot4 API")
                         .version("v1.0.0")
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")));
     }
