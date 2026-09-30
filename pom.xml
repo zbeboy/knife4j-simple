@@ -42,6 +42,7 @@
         <module>knife4j-openapi3-spring-boot2-starter</module>
         <module>knife4j-openapi3-spring-boot3-starter</module>
         <module>knife4j-openapi3-spring-boot2-demo</module>
+        <module>knife4j-openapi3-spring-boot3-demo</module>
     </modules>
 
     <build>
