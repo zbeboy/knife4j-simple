@@ -1,3 +1,3 @@
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-io.github.zbeboy.knife4j.spring.configuration.Knife4jAutoConfiguration
+io.github.zbeboy.knife4j.spring.reactor.configuration.Knife4jAutoConfiguration
