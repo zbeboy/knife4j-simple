@@ -33,17 +33,12 @@ public abstract class CollectionUtils {
      * @return 空返回true,非空为false
      */
     public static boolean isEmpty(Collection<?> collection) {
-        if (collection == null || collection.size() == 0) {
-            return true;
-        }
-        return false;
+        return collection == null || collection.isEmpty();
     }
     
     public static boolean isNotEmpty(Map<?, ?> map) {
         if (map != null) {
-            if (map.size() > 0) {
-                return true;
-            }
+            return !map.isEmpty();
         }
         return false;
     }
