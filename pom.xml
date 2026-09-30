@@ -6,7 +6,7 @@
 
     <groupId>io.github.zbeboy</groupId>
     <artifactId>knife4j-simple</artifactId>
-    <version>1.0-RELEASE</version>
+    <version>1.1-RELEASE</version>
     <packaging>pom</packaging>
     <name>io.github.zbeboy:knife4j-simple</name>
     <description>knife4j-simple</description>
