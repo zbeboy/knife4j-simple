@@ -1,0 +1,12 @@
+springdoc:
+  packagesToScan: io.github.zbeboy.knife4j.demo.controller
+
+knife4j:
+  enable: true
+  setting:
+    enable-host-text: 192.168.0.193:8000
+  basic:
+    enable: true
+    username: admin
+    password: admin123
+  production: false
