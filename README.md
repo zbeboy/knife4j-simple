@@ -16,9 +16,46 @@ knife4j的前身是`swagger-bootstrap-ui`，为了契合微服务的架构发展
 
 # 使用帮助
 访问：http://ip:port/doc.html
-
 即可查看文档  
-
+具体配置与knife4j一致，示例：  
+```示例
+     knife4j:  
+       enable: true  
+        documents:  
+         -  
+          group: 2.X版本  
+          name: 接口签名  
+          locations: classpath:sign/*  
+        setting:  
+          language: zh-CN  
+          enable-swagger-models: true  
+          enable-document-manage: true  
+          swagger-model-name: 实体类列表  
+          enable-version: false  
+          enable-reload-cache-parameter: false  
+          enable-after-script: true  
+          enable-filter-multipart-api-method-type: POST
+          enable-filter-multipart-apis: false
+          enable-request-cache: true
+          enable-host: false
+          enable-host-text: 192.168.0.193:8000
+          enable-home-custom: true
+          home-custom-path: classpath:markdown/home.md
+          enable-search: false
+          enable-footer: false
+          enable-footer-custom: true
+          footer-custom-content: Apache License 2.0 | Copyright  2019-[浙江八一菜刀股份有限公司](https://gitee.com/xiaoym/knife4j)
+          enable-dynamic-parameter: false
+          enable-debug: true
+          enable-open-api: false
+          enable-group: true
+        cors: false
+        production: false
+        basic:
+          enable: false
+          username: test
+          password: 12313`
+```
 # 模块说明
 _[knife4j-openapi3-spring-boot2-starter](knife4j-openapi3-spring-boot2-starter)_ 适配Spring boot 2  
 _[knife4j-openapi3-spring-boot3-starter](knife4j-openapi3-spring-boot3-starter)_ 适配Spring boot 3  
