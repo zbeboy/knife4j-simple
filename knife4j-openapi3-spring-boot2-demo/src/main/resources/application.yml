@@ -7,4 +7,3 @@ knife4j:
     enable: true
     username: admin
     password: admin123
-  production: false
