@@ -70,41 +70,49 @@ _[knife4j-openapi3-spring-boot4-webflux-starter](knife4j-openapi3-spring-boot4-w
         <groupId>io.github.zbeboy</groupId>
         <artifactId>knife4j-openapi3-spring-boot2-starter</artifactId>
         <version>${version}</version>
-    </dependency>`
+    </dependency>
 注意：不需要引入[Spring doc](https://springdoc.org/)，starter中已引入，版本过高或过低可能造成冲突。
 ### knife4j-openapi3-spring-boot2-starter
 | 版本          | Spring doc | Spring boot |JDK|
 |-------------|------------|-------------|-------------|
+| 1.2-RELEASE | 1.8.0        | 2.7.18         |8|
 | 1.1-RELEASE | 1.8.0        | 2.7.18         |8|
 | 1.0-RELEASE | 1.8.0        | 2.7.18         |8|
 
 ### knife4j-openapi3-spring-boot3-starter
 | 版本          | Spring doc | Spring boot | JDK |
 |-------------|------------|-------------|-----|
+| 1.2-RELEASE | 2.9.1      | 3.5.16         | 17  |
 | 1.1-RELEASE | 2.9.1      | 3.5.16         | 17  |
 | 1.0-RELEASE | 2.9.1      | 3.5.16         | 17  |
 
 ### knife4j-openapi3-spring-boot4-starter
 | 版本          | Spring doc | Spring boot | JDK |
 |-------------|------------|-------------|-----|
+| 1.2-RELEASE | 3.1.1      | 4.1.1         | 17  |
 | 1.1-RELEASE | 3.1.1      | 4.1.1         | 17  |
 
 ### knife4j-openapi3-spring-boot2-webflux-starter
 | 版本          | Spring doc | Spring boot | JDK |
 |-------------|------------|-------------|-----|
+| 1.2-RELEASE | 1.8.0      | 2.7.18         | 8   |
 | 1.1-RELEASE | 1.8.0      | 2.7.18         | 8   |
 
 ### knife4j-openapi3-spring-boot3-webflux-starter
 | 版本          | Spring doc | Spring boot | JDK |
 |-------------|------------|-------------|-----|
+| 1.2-RELEASE | 2.9.1      | 3.5.16         | 17  |
 | 1.1-RELEASE | 2.9.1      | 3.5.16         | 17  |
 
 ### knife4j-openapi3-spring-boot4-webflux-starter
 | 版本          | Spring doc | Spring boot | JDK |
 |-------------|------------|-------------|-----|
+| 1.2-RELEASE | 3.1.1      | 4.1.1         | 17  |
 | 1.1-RELEASE | 3.1.1      | 4.1.1         | 17  |
 
 # 发布说明
+## 1.2-RELEASE
+1. 修复1.0中基础base鉴权失效问题
 ## 1.1-RELEASE
 1. 修复1.0中基础base鉴权失效问题
 ## 1.0-RELEASE
