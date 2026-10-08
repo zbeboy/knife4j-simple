@@ -6,7 +6,7 @@
 
     <groupId>io.github.zbeboy</groupId>
     <artifactId>knife4j-openapi3-spring-boot4-webflux-demo</artifactId>
-    <version>1.1-RELEASE</version>
+    <version>1.2-RELEASE</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -30,7 +30,7 @@
         <dependency>
             <groupId>io.github.zbeboy</groupId>
             <artifactId>knife4j-openapi3-spring-boot4-webflux-starter</artifactId>
-            <version>1.1-RELEASE</version>
+            <version>1.2-RELEASE</version>
         </dependency>
     </dependencies>
 </project>

@@ -7,12 +7,12 @@
     <parent>
         <groupId>io.github.zbeboy</groupId>
         <artifactId>knife4j-simple</artifactId>
-        <version>1.1-RELEASE</version>
+        <version>1.2-RELEASE</version>
     </parent>
 
     <groupId>io.github.zbeboy</groupId>
     <artifactId>knife4j-openapi3-spring-boot3-starter</artifactId>
-    <version>1.1-RELEASE</version>
+    <version>1.2-RELEASE</version>
     <name>io.github.zbeboy:knife4j-openapi3-spring-boot3-starter</name>
     <description>knife4j-openapi3-spring-boot3-starter</description>
     <url>https://github.com/zbeboy/knife4j-simple/tree/master/knife4j-openapi3-spring-boot3-starter</url>
