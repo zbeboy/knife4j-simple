@@ -33,7 +33,7 @@ import java.io.IOException;
 public class SecurityBasicAuthFilter extends AbstractSecurityFilter implements Filter {
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(FilterConfig filterConfig) {
         this.initServletConfig(filterConfig.getInitParameterNames(),
                 filterConfig.getInitParameter("enableBasicAuth"),
                 filterConfig.getInitParameter("userName"),
